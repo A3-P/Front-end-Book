@@ -1,0 +1,14 @@
+[data-theme="dark"] {
+    --color-bg: #0e1120;
+    --color-card: #47537c57;
+    --colorLogin-btn: #4F4DE5;
+}
+
+[data-theme="light"] {
+    --color-bg: #f6f6f6;
+    --color-card: #fff;
+}
+
+[color-choice="pink"] {
+    --color-main: pink;
+}
