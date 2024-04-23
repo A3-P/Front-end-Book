@@ -1,0 +1,6 @@
+[data-color="pink"]{
+    --color-main: #fb95ff;
+}
+[data-theme="dark"]{
+    --color-bg: #222;
+}
