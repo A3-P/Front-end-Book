@@ -4,9 +4,10 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 .login-container {
@@ -14,14 +15,25 @@ body {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    width: 100%;
+    width: 22%;
+    height: 60%;
     text-align: center;
     color: var(--color-Container);
+    margin-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    animation: girar .3s linear infinite, mover 1s linear infinite;
+
 }
 
 .login-container h2 {
-    margin-bottom: 30px;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 input[type="email"],
@@ -31,13 +43,15 @@ input[type="submit"] {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
-    border: 1px solid #333;
+    border: 1px solid #666666;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: var(--color-bgBox);
+    color: #fff;
+    caret-color: #fff;
 }
 
-input[type="email"],[type="senha"] ::placeholder {
+::placeholder {
     color: var(--colorPlaceholder);
 }
 
@@ -46,13 +60,29 @@ input[type="submit"] {
     color: white;
     border: none;
     cursor: pointer;
+    margin-top: 1.5rem;
+    height: 2.7rem;
 }
 
 input[type="submit"]:hover {
     background-color: var(--colorHover-btn);
 }
 
-.signup-link {
+a{
     text-decoration: none;
-    color: #0c00f8; 
+    color: rgb(93, 176, 214); 
+}
+hr{
+    width: 100%;
+    border: 1px solid #a3a3a381;
+}
+@keyframes girar{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes mover{
+    to{
+        transform: translateX(1000px);
+    }
 }

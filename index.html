@@ -12,10 +12,10 @@
             rel="stylesheet"
             href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
         />
-
-        <title>Document</title>
+        <link rel="shortcut icon" href="static/img/papagaio-verde-108181.ico" type="image/x-icon">
+        <title>Main page</title>
     </head>
-    <body data-color="blue" data-theme="light">
+    <body data-color="blue" data-theme="dark">
         <header>
             <h1>Book Guardian</h1>
             <div id="searchDiv">
@@ -30,10 +30,10 @@
         </header>
         <main>
             <nav>
-                <i class="fi fi-rr-user" title="Perfil"></i>
+                <i id="profileBtn" class="fi fi-rr-user" title="Perfil"></i>
                 <i class="fi fi-rr-add" title="Adicionar"></i>
                 <i class="fi fi-rr-home" title="Inicio"></i>
-                <i class="fi fi-rr-filter" title="Configuracoes"></i>
+                <i class="fi fi-rr-filter" title="Filtros"></i>
                 <i class="fi fi-rr-settings" title="Configuracoes"></i>
             </nav>
             <section>
@@ -50,5 +50,14 @@
                 </a>
             </section>
         </main>
+        <script src="static/js/nav.js"></script>
+        <script>
+            window.addEventListener("blur", function(){
+                document.title = "AAAAAAAAAAAAAAAAAAAA";
+            });
+            window.addEventListener("focus", function(){
+                document.title = "Main page";
+            });
+        </script>
     </body>
 </html>

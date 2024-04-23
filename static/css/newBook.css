@@ -1,0 +1,9 @@
+i{
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 3rem;
+    color: var(--color-main);
+    cursor: pointer;
+    margin: 5px;
+}

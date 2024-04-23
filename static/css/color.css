@@ -6,10 +6,13 @@
     --color-main: #2d88ff;
     --color-main-hover: #2a85af;
 }
+
+
 [data-theme="dark"]{
-    --color-bg: #222;
-    --color-card: #333;
+    --color-bg: #222; 
+    --color-card: #333; 
     --color-fg: #fff;
+
 }
 [data-theme="light"]{
     --color-bg: #f6f6f6;

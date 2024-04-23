@@ -16,6 +16,7 @@ header h1{
 #search{
     background-color: var(--color-card);
     border: none;
+    width: 86%;
 }
 #searchDiv{
     border: 1px solid var(--color-fg);
@@ -24,10 +25,12 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 17rem;
 }
 #searchDiv i{
     border-left: 1px solid var(--color-fg);
     padding-left: 8px;
+    cursor: pointer;
 }
 #searchDiv input:focus{
     outline: none;
