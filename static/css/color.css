@@ -1,0 +1,18 @@
+[data-color="pink"]{
+    --color-main: #f837ff;
+    --color-main-hover: #b741bb;
+}
+[data-color="blue"]{
+    --color-main: #2d88ff;
+    --color-main-hover: #2a85af;
+}
+[data-theme="dark"]{
+    --color-bg: #222;
+    --color-card: #333;
+    --color-fg: #fff;
+}
+[data-theme="light"]{
+    --color-bg: #f6f6f6;
+    --color-card: #fff;
+    --color-fg: #000;
+}
