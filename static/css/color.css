@@ -1,6 +1,18 @@
 [data-color="pink"]{
     --color-main: #fb95ff;
+    --color-main-hover: #d17cd4;
+}
+[data-color="blue"]{
+    --color-main: #95ddff;
+    --color-main-hover: #80c3e2;
 }
 [data-theme="dark"]{
     --color-bg: #222;
+    --color-card: #333;
+    --color-fg: #fff;
+}
+[data-theme="light"]{
+    --color-bg: #f6f6f6;
+    --color-card: #fff;
+    --color-fg: #000;
 }
