@@ -1,0 +1,21 @@
+[data-theme="dark"] {
+    --color-bg: #0e1120;
+    --color-card: #47537c57;
+    --colorLogin-btn: #4F4DE5;
+    --colorHover-btn: #6260dd;
+    --color-Container: #fff;
+    --colorPlaceholder: #fff;
+}
+
+[data-theme="light"] {
+    --color-bg: #f6f6f6;
+    --color-card: #fff;
+    --colorLogin-btn: #4F4DE5;
+    --colorPlaceholder: #000;
+    --colorHover-btn: #6260dd;
+}
+
+[color-choice="pink"] {
+    --color-main: pink;
+}
+
