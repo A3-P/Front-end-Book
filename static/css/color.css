@@ -1,10 +1,10 @@
 [data-color="pink"]{
-    --color-main: #fb95ff;
-    --color-main-hover: #d17cd4;
+    --color-main: #f837ff;
+    --color-main-hover: #b741bb;
 }
 [data-color="blue"]{
-    --color-main: #95ddff;
-    --color-main-hover: #80c3e2;
+    --color-main: #2d88ff;
+    --color-main-hover: #2a85af;
 }
 [data-theme="dark"]{
     --color-bg: #222;

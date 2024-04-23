@@ -9,6 +9,7 @@
     background-color: var(--color-card);
     cursor: pointer;
     color: var(--color-fg);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .card img {
     width: 100%;

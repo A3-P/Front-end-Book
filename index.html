@@ -15,29 +15,40 @@
 
         <title>Document</title>
     </head>
-    <body data-color="pink" data-theme="dark">
+    <body data-color="blue" data-theme="light">
         <header>
             <h1>Book Guardian</h1>
             <div id="searchDiv">
-                <input type="text" name="search" id="search" placeholder="Pesquisar Livro"/>
+                <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="Pesquisar Livro"
+                />
                 <i class="fi fi-rr-search" title="Pesquisar"></i>
             </div>
         </header>
-        <nav>
-            <i class="fi fi-rr-user" title="Perfil"></i>
-            <i class="fi fi-rr-add" title="Adicionar"></i>
-            <i class="fi fi-rr-home" title="Inicio"></i>
-        </nav>
-        <a href="#" class="card">
-            <img
-                src="https://m.media-amazon.com/images/I/51jMfnBsk+L.jpg"
-                alt="capa"
-            />
-            <div class="backCard">
-                <p id="title">A lista de convidados</p>
-                <p id="autora">Lucy Foley</p>
-                <p id="year">2021</p>
-            </div>
-        </a>
+        <main>
+            <nav>
+                <i class="fi fi-rr-user" title="Perfil"></i>
+                <i class="fi fi-rr-add" title="Adicionar"></i>
+                <i class="fi fi-rr-home" title="Inicio"></i>
+                <i class="fi fi-rr-filter" title="Configuracoes"></i>
+                <i class="fi fi-rr-settings" title="Configuracoes"></i>
+            </nav>
+            <section>
+                <a href="#" class="card">
+                    <img
+                        src="https://m.media-amazon.com/images/I/51jMfnBsk+L.jpg"
+                        alt="capa"
+                    />
+                    <div class="backCard">
+                        <p id="title">A lista de convidados</p>
+                        <p id="autora">Lucy Foley</p>
+                        <p id="year">2021</p>
+                    </div>
+                </a>
+            </section>
+        </main>
     </body>
 </html>
