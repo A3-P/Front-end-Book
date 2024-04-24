@@ -1,3 +1,4 @@
+// profile
 const profileBtn = document.getElementById("profileBtn");
 const profileMenuHeader = document.getElementById("profileMenuHeader").style;
 const goToLoginPage = document.getElementById("goToLoginPage");
@@ -21,7 +22,7 @@ goToLoginPage.addEventListener("click", function () {
 });
 
 
-
+// filter
 const filterBtn = document.getElementById("filterBtn");
 const filter = document.getElementById("filter").style;
 
@@ -37,4 +38,21 @@ filterBtn.addEventListener("click", function () {
             filter.display = "none";
         }, 500);
     }
+});
+
+
+// home
+document.getElementById("homeBtn").addEventListener("click", function(){
+    window.location.href = "";
+});
+
+
+// config
+document.getElementById("configBtn").addEventListener("click", function(){
+    window.location.href = "static/html/settings.html";
+});
+
+//add book
+document.getElementById("addBookbtn").addEventListener("click", function(){
+    window.location.href = "static/html/addBook.html";
 });
