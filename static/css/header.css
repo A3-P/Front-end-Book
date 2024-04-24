@@ -4,11 +4,17 @@ header{
     top: 0;
     width: 50%;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
     background-color: var(--color-card);
     color: var(--color-fg);
     border-radius: 0 0 25px 25px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+#mainHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 header h1{
     text-transform: uppercase;
@@ -78,6 +84,7 @@ header h6 i, header h6{
 }
 #profileMenuHeader button{
     background-color: var(--color-main);
+    color: var(--color-fg);
     border: none;
     border-radius: 8px;
     height: 2.4rem;
@@ -86,4 +93,42 @@ header h6 i, header h6{
 }
 #profileMenuHeader button:hover{
     background-color: var(--color-main-hover);
+}
+#filter{
+    width: 95%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-bottom: 10px;
+    flex-direction: row;
+    padding: 10px;
+}
+#filter label {
+    font-weight: 900;
+}
+#filter select,
+#filter input[type="checkbox"] {
+    margin-right: 1rem;
+    background-color: var(--color-subCard);
+    color: var(--color-fg);
+    border: none;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+#filter button {
+    background-color: var(--color-main);
+    color: var(--color-fg);
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 7rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+}
+#filter button:hover {
+    background-color: var(--color-main-hover);
+    color: var(--color-fg-hover);
 }

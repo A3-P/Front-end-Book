@@ -32,34 +32,52 @@
         />
         <title>Main page</title>
     </head>
-    <body data-color="blue" data-theme="light">
+    <body data-color="blue" data-theme="dark">
         <header>
-            <h1>Book Guardian</h1>
-            <div id="searchDiv">
-                <input
-                    type="text"
-                    name="search"
-                    id="search"
-                    placeholder="Pesquisar Livro"
-                />
-                <i class="fi fi-rr-search" title="Pesquisar"></i>
-            </div>
-            <h6>
-                <i
-                    id="profileBtn"
-                    class="fi fi-rr-circle-user"
-                    title="Perfil"
-                ></i>
-                <div id="profileMenuHeader">
-                    <button id="goToLoginPage">Entrar</button>
+            <div id="mainHeader">
+                <h1>Book Guardian</h1>
+                <div id="searchDiv">
+                    <input
+                        type="text"
+                        name="search"
+                        id="search"
+                        placeholder="Pesquisar Livro"
+                    />
+                    <i class="fi fi-rr-search" title="Pesquisar"></i>
                 </div>
-            </h6>
+                <h6>
+                    <i
+                        id="profileBtn"
+                        class="fi fi-rr-circle-user"
+                        title="Perfil"
+                    ></i>
+                    <div id="profileMenuHeader">
+                        <button id="goToLoginPage">Entrar</button>
+                    </div>
+                </h6>
+            </div>
+            <div id="filter">
+                <div>
+                    <label for="genre">Gênero:</label>
+                    <select id="genre">
+                        <option value="">Todos os Gêneros</option>
+                        <option value="ficcao">Ficção</option>
+                        <option value="romance">Romance</option>
+                        <option value="terror">Terror</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="read">Já leu?</label>
+                    <input type="checkbox" id="read" name="read" />
+                </div>
+                <button type="submit">Aplicar Filtros</button>
+            </div>
         </header>
         <main>
             <nav>
                 <i class="fi fi-rr-add" title="Adicionar"></i>
                 <i class="fi fi-rr-home" title="Inicio"></i>
-                <i class="fi fi-rr-filter" title="Filtros"></i>
+                <i id="filterBtn" class="fi fi-rr-filter" title="Filtros"></i>
                 <i class="fi fi-rr-settings" title="Configuracoes"></i>
             </nav>
             <section>
