@@ -10,6 +10,8 @@
     cursor: pointer;
     color: var(--color-fg);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: height 0.5s ease;
 }
 .card img {
     width: 100%;
@@ -17,10 +19,13 @@
     border-radius: 1rem;
 }
 .card:hover img{
+    animation: slideOut 0.5s ease forwards;
     display: none;
 }
 .backCard {
     display: none;
+    transform: translateX(100%);
+
 }
 .card:hover .backCard{
     display: flex;
@@ -34,4 +39,23 @@
     overflow: hidden;
     padding: 5px;
     opacity: calc(50%);
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
