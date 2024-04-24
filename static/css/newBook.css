@@ -1,9 +1,73 @@
-i{
+#goBack{
     position: fixed;
-    left: 0;
-    top: 0;
-    font-size: 3rem;
     color: var(--color-main);
     cursor: pointer;
-    margin: 5px;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    margin: 1rem;
+}
+#newBookDiv {
+    background-color: var(--color-card);
+    color: var(--color-fg);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    margin: 1rem;
+}
+#newBookDiv h2{
+    font-weight: 900;
+    font-size: 2rem
+}
+
+#newBookForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 2rem;
+    overflow: auto;
+
+}
+
+#newBookForm label {
+    margin-bottom: 5px;
+}
+
+#newBookForm input[type="text"],
+#newBookForm input[type="number"],
+#newBookForm input[type="file"],
+#newBookForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 30px;
+    box-sizing: border-box;
+    background-color: var(--color-subCard);
+    color: var(--color-fg);
+    border: none;
+    border-radius: 8px;
+}
+
+
+#newBookForm input[type="submit"] {
+    background-color: var(--color-main);
+    color: var(--color-fg);
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 7px;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+#newBookForm input[type="submit"]:hover {
+    background-color: var(--color-main-hover);
 }
