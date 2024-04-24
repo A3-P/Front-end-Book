@@ -76,13 +76,7 @@ hr{
     width: 100%;
     border: 1px solid #a3a3a381;
 }
-@keyframes girar{
-    to{
-        transform: rotate(360deg);
-    }
-}
-@keyframes mover{
-    to{
-        transform: translateX(1000px);
-    }
-}
+
+
+
+

@@ -4,15 +4,19 @@ const goToLoginPage = document.getElementById("goToLoginPage");
 
 profileMenuHeader.display = "none";
 
-profileBtn.addEventListener("click", function(){
-    if(profileMenuHeader.display === "none"){
+profileBtn.addEventListener("click", function () {
+    if (profileMenuHeader.display === "none") {
         profileMenuHeader.display = "flex";
+        profileMenuHeader.animation = "slideDown 0.3s ease forwards";
     } else {
-        profileMenuHeader.display = "none";
+        profileMenuHeader.animation = "slideUp 0.3s ease forwards";
+        setTimeout(() => {
+            profileMenuHeader.display = "none";
+        }, 300);
     }
 });
 
-goToLoginPage.addEventListener("click", function(){
+goToLoginPage.addEventListener("click", function () {
     window.location.href = "nadoxLoginScreen/index.html";
 });
 
@@ -23,10 +27,14 @@ const filter = document.getElementById("filter").style;
 
 filter.display = "none";
 
-filterBtn.addEventListener("click", function(){
-    if(filter.display === "none"){
+filterBtn.addEventListener("click", function () {
+    if (filter.display === "none") {
         filter.display = "flex";
+        filter.animation = "slideDown 0.5s ease forwards";
     } else {
-        filter.display = "none";
+        filter.animation = "slideUp 0.5s ease forwards";
+        setTimeout(() => {
+            filter.display = "none";
+        }, 500);
     }
 });
