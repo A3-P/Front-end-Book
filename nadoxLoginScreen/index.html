@@ -9,15 +9,21 @@
     <title>Login - Book Guardian</title>
 </head>
 <body data-theme="light" color-choice="pink">
-    <div class="login-container">
+    <div class ="singin-container" id="singincontainer">
+        <style>
+            #singincontainer {
+                display: none;
+            }
+        </style>
+    </div>
+    <div class ="login-container" id="logincontainer">
         <h2>Login</h2>
         <form action="/login" method="post">
             <input type="email" id="email" name="UserEmail" placeholder="Email" required>
             <input type="password" id="password" name="Senha" placeholder="Senha" required>
             <input type="submit" value="Login">
         </form> 
-        <p>Não possui uma conta ? <a href="#" class="signup-link">Registre-se aqui</a>.</p>
-        <p><a href="#" class="signup-link"> Esqueceu a Senha ?</a></p>
+        <p>Não possui uma conta ? <a href="#" id="singIn" class="signup-link">Registre-se aqui</a>.</p>
     </div>
 </body> 
 </html>

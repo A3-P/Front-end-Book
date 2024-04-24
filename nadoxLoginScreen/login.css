@@ -18,6 +18,7 @@ body {
     width: 100%;
     text-align: center;
     color: var(--color-Container);
+    display: none;
 }
 
 .login-container h2 {
