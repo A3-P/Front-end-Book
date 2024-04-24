@@ -1,18 +1,25 @@
 [data-color="pink"]{
-    --color-main: #f837ff;
-    --color-main-hover: #b741bb;
+    --color-main: deeppink;
+    --color-main-hover: rgb(216, 18, 124);
 }
 [data-color="blue"]{
     --color-main: #2d88ff;
     --color-main-hover: #2a85af;
 }
+
+
 [data-theme="dark"]{
-    --color-bg: #222;
-    --color-card: #333;
+    --color-bg: #222; 
+    --color-card: #333; 
+    --color-subCard:#575757;
     --color-fg: #fff;
+    --color-fg-hover: #e7e7e7;
+
 }
 [data-theme="light"]{
     --color-bg: #f6f6f6;
     --color-card: #fff;
+    --color-subCard:#f0f0f0;
     --color-fg: #000;
+    --color-fg-hover: #292929;
 }
