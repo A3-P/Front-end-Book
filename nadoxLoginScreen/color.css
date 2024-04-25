@@ -5,6 +5,7 @@
     --colorHover-btn: #6260dd;
     --color-Container: #fff;
     --colorPlaceholder: #fff;
+    --color-bgBox: #fff;
 }
 
 [data-theme="light"] {
