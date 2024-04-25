@@ -49,7 +49,7 @@ document.getElementById("homeBtn").addEventListener("click", function(){
 
 // config
 document.getElementById("configBtn").addEventListener("click", function(){
-    window.location.href = "static/html/settings.html";
+    window.location.href = "static/html/configPage.html";
 });
 
 //add book
