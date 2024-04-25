@@ -18,7 +18,7 @@ body {
     width: 22%;
     height: 60%;
     text-align: center;
-    color: var(--color-Container);
+    color: var(--color-fg);
     display: block;
 }
 
@@ -35,20 +35,20 @@ input[type="submit"] {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
-    border: 1px solid #666666;
+    border: 1px solid var(--color-border);
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: var(--color-bgBox);
-    color: #fff;
-    caret-color: #fff;
+    background-color: var(--color-card);
+    color: var(--color-fg);
+    caret-color: var(--color-fg);
 }
 
 ::placeholder {
-    color: var(--colorPlaceholder);
+    color: var(--color-fg);
 }
 
 input[type="submit"] {
-    background-color: var(--colorLogin-btn);
+    background-color: var(--color-btn);
     color: white;
     border: none;
     cursor: pointer;
@@ -57,24 +57,24 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: var(--colorHover-btn);
+    background-color: var(--color-btn-hover);
 }
 
-a {
+#singIn {
     text-decoration: none;
-    color: rgb(93, 176, 214);
+    color: var(--color-fg-alt);
 }
 hr {
     width: 100%;
-    border: 1px solid #a3a3a381;
+    border: 1px solid var(--color-border);
 }
 
 #singincontainer {
-    color: #fff;
+    color: var(--color-fg);
 }
 
 
-/* animacao besta */
+/* animacao */
 
 @keyframes rotateIn {
     0% {
@@ -107,4 +107,4 @@ hr {
 .show {
     animation: rotateIn 0.5s ease-in-out forwards;
 }
-/* animacao besta */
+/* animacao */
