@@ -105,6 +105,10 @@ input[type="file"] {
     border-radius: 4px;
 }
 
+label {
+    font-size: medium;
+}   
+
 hr {
     width: 100%;
     border: 1px solid var(--color-border);
