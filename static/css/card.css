@@ -19,7 +19,6 @@
     position: absolute;
     width: 10rem;
     height: 15rem;
-    color: var(--color-main);
     font-size: 2rem;
     text-align: left;
     margin: -10px 0 0 10px;
@@ -70,3 +69,4 @@
         transform: translateX(100%);
     }
 }
+

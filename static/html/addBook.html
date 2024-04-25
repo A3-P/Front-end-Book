@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/newBook.css">
     <link rel="stylesheet" href="../css/imports.css">
 </head>
-<body data-color="blue" data-theme="dark">
+<body data-color="blue" data-theme="light">
     <div class="rowContainer">
         <div id="newBookDiv">
             <h2>Cadastro de Livro</h2>
@@ -24,7 +24,7 @@
                 <textarea id="descriptionInp" name="description"
                 placeholder="Descricao" required rows="4" style="resize: vertical;"></textarea>
             
-                <label for="imageInp">Imagem de capa:</label>
+                <label for="imageInp">Imagem da capa:</label>
                 <input type="file" id="imageInp" name="image">
 
                 <div id="formSelects">
@@ -34,6 +34,8 @@
                         <option value="fiction">Ficcao</option>
                         <option value="romance">Romance</option>
                         <option value="horror">Terror</option>
+                        <option value="nonFiction">Nao ficcao</option>
+                        <option value="fantasy">Fantasia</option>
                     </select>
                     
                 
@@ -51,12 +53,7 @@
             <button id="cancelBook">Cancelar</button>
         </div>
     </div>
-
-    <script>
-        document.getElementById("goBack").addEventListener("click", function(){
-            window.location.href ="../../index.html";
-        });
-    </script>
     <script src="../js/themeAndColor.js"></script>
+    <script src="../js/newBook.js"></script>
 </body>
 </html>

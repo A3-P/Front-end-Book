@@ -23,3 +23,10 @@
     --color-fg: #000;
     --color-fg-hover: #292929;
 }
+
+.read{
+    color: #53ff43;
+}
+.nonRead{
+    color: #ff8635;
+}
