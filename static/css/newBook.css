@@ -49,7 +49,8 @@
 #newBookForm input[type="text"],
 #newBookForm input[type="number"],
 #newBookForm input[type="file"],
-#newBookForm select {
+#newBookForm select,
+#newBookForm textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0 30px;
@@ -59,22 +60,18 @@
     border: none;
     border-radius: 8px;
 }
-
-
-#newBookForm input[type="submit"] {
-    background-color: var(--color-main);
-    color: var(--color-fg);
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 7px;
-    font-weight: 800;
-    font-size: 1rem;
+#formSelects{
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+    justify-content: space-around;
+    align-items: baseline;
 }
-
-#newBookForm input[type="submit"]:hover {
-    background-color: var(--color-main-hover);
+#formSelects select{
+    width: 34%;
+}
+#formSelects label{
+    margin-right: -20px;
 }
 
 #addBtnsNavegation{

@@ -19,23 +19,30 @@
             
                 <label for="authorInp">Autor(a):</label>
                 <input type="text" id="authorInp" name="author" placeholder="Autor" required>
+                
+                <label for="descriptionInp">Descricao:</label>
+                <textarea id="descriptionInp" name="description"
+                placeholder="Descricao" required rows="4" style="resize: vertical;"></textarea>
             
                 <label for="imageInp">Imagem de capa:</label>
                 <input type="file" id="imageInp" name="image">
 
-                <label for="genre">Genre:</label>
-                <select id="genre">
-                    <option value="fiction">Ficcao</option>
-                    <option value="romance">Romance</option>
-                    <option value="horror">Terror</option>
-                </select>
+                <div id="formSelects">
+                    <label for="genre">Genero:</label>
+                    <select id="genre">
+                        <option value="">Generico</option>
+                        <option value="fiction">Ficcao</option>
+                        <option value="romance">Romance</option>
+                        <option value="horror">Terror</option>
+                    </select>
+                    
                 
-            
-                <label for="status">Status:</label>
-                <select id="status" name="status">
-                    <option value="read">Ja li</option>
-                    <option value="wantRead">Quero ler</option>
-                </select>
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option value="read">Ja li</option>
+                        <option value="wantRead">Quero ler</option>
+                    </select>
+                </div>
             </form>
             
         </div>
