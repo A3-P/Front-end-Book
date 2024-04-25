@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="color.css">
     <title>Login - Book Guardian</title>
 </head>
-<body data-theme="light">
+<body data-theme="dark">
     <div class ="singin-container show" id="singincontainer" style="display: none;">
         <h2>Cadastro</h>
         <form action="/cadastro" method="post">
             <input type="email" id="newEmail" name="newUser" placeholder="Email" required>
             <input type="password" id="newPassword" name="newPsUser" placeholder="Digite sua senha" required>
             <input type="password" id="confirmPassword" name="confirmPsUser" placeholder="Confirme sua senha" required>
-            <input type="file" id="userImg" name="userImg" placeholder="Escolha Sua Foto" required>
+            <input type="file" id="userImg" name="userImg" accept="image/*">
             <input type="button" value="Cadastrar" placeholder="Cadastrar">
         </form>
     </div>
