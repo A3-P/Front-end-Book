@@ -1,17 +1,17 @@
 [data-color="pink"]{
-    --color-main: deeppink;
+    --color-main: rgb(255, 59, 163);
     --color-main-hover: rgb(216, 18, 124);
 }
 [data-color="blue"]{
-    --color-main: #2d88ff;
+    --color-main: #0ebbff;
     --color-main-hover: #2a85af;
 }
 
 
 [data-theme="dark"]{
-    --color-bg: #222; 
-    --color-card: #333; 
-    --color-subCard:#575757;
+    --color-bg: #0e1120; 
+    --color-card: #2d3242; 
+    --color-subCard:#474e66;
     --color-fg: #fff;
     --color-fg-hover: #e7e7e7;
 

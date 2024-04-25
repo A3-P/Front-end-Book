@@ -1,6 +1,7 @@
 nav{
     display: flex;
-    position: static;
+    position: fixed;
+    top: 36vh;
     background-color: var(--color-card);
     color: var(--color-main);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);

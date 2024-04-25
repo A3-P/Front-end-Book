@@ -1,7 +1,9 @@
 header{
     display: flex;
-    position: fixed;
+    position: sticky;
+    overflow: visible;
     top: 0;
+    margin-bottom: 1rem;
     width: 50%;
     align-items: center;
     flex-direction: column;
@@ -9,6 +11,7 @@ header{
     color: var(--color-fg);
     border-radius: 0 0 25px 25px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
 }
 #mainHeader{
     width: 100%;
@@ -99,11 +102,12 @@ header h6 i, header h6{
 #filter{
     z-index: 2;
     width: 95%;
+    height: 2rem;
     display: none;
     align-items: center;
     justify-content: space-evenly;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     flex-direction: row;
     padding: 10px;
 }

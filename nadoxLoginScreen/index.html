@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href= "login.css">
     <link rel="stylesheet" href="color.css">
-
     <title>Login - Book Guardian</title>
 </head>
-<body data-theme="light" color-choice="pink">
-    <div class ="singin-container" id="singincontainer">
-        <style>
-            #singincontainer {
-                display: none;
-            }
-        </style>
+<body data-theme="dark">
+    <div class ="singin-container show" id="singincontainer" style="display: none;">
+        <h1>nessa div vc coloca todo o formulario de registro, tipo nome, email,
+        foto, senha e tals</h1>
+        <button id="goToLoginPage">botao para voltar pra tela de login</button>
     </div>
-    <div class ="login-container" id="logincontainer">
+    <div class ="login-container show" id="logincontainer" >
         <h2>Login</h2>
         <form action="/login" method="post">
             <input type="email" id="email" name="UserEmail" placeholder="Email" required>
             <input type="password" id="password" name="Senha" placeholder="Senha" required>
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" placeholder="Entrar">
         </form> 
         <p>Não possui uma conta ? <a href="#" id="singIn" class="signup-link">Registre-se aqui</a>.</p>
     </div>
+    <script src="SingIn.js"></script>
 </body> 
 </html>

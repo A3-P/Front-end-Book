@@ -7,18 +7,49 @@
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/color.css">
     <link rel="stylesheet" href="../css/newBook.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
-/>
+    <link rel="stylesheet" href="../css/imports.css">
 </head>
 <body data-color="blue" data-theme="dark">
-    <i id="goBack" class="fi fi-rr-arrow-small-left" title="Voltar"></i>
+    <div class="rowContainer">
+        <div id="newBookDiv">
+            <h2>Cadastro de Livro</h2>
+            <form id="newBookForm" action="/submit" method="post" enctype="multipart/form-data">
+                <label for="titleInp">Titulo:</label>
+                <input type="text" id="titleInp" name="title" placeholder="Titulo" required>
+            
+                <label for="authorInp">Autor(a):</label>
+                <input type="text" id="authorInp" name="author" placeholder="Autor" required>
+            
+                <label for="imageInp">Imagem de capa:</label>
+                <input type="file" id="imageInp" name="image">
+
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="fiction">Ficcao</option>
+                    <option value="romance">Romance</option>
+                    <option value="horror">Terror</option>
+                </select>
+                
+            
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="read">Ja li</option>
+                    <option value="wantRead">Quero ler</option>
+                </select>
+            </form>
+            
+        </div>
+        <div id="addBtnsNavegation">
+            <button id="addBook">Adicionar</button>
+            <button id="cancelBook">Cancelar</button>
+        </div>
+    </div>
 
     <script>
         document.getElementById("goBack").addEventListener("click", function(){
             window.location.href ="../../index.html";
         });
     </script>
+    <script src="../js/themeAndColor.js"></script>
 </body>
 </html>

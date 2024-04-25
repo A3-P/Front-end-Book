@@ -2,6 +2,29 @@ const body = document.body;
 const toggleTheme = document.getElementById("toggleTheme");
 const toggleColor = document.getElementById("toggleColor");
 
+function updateThemeBasedOnSystemPreference() {
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDarkMode) {
+        body.setAttribute("data-theme", "dark");
+        toggleTheme.innerText = "Dark Theme";
+    } else {
+        body.setAttribute("data-theme", "light");
+        toggleTheme.innerText = "Light Theme";
+    }
+}
+
+updateThemeBasedOnSystemPreference();
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+    if (e.matches) {
+        body.setAttribute("data-theme", "dark");
+        toggleTheme.innerText = "Dark Theme";
+    } else {
+        body.setAttribute("data-theme", "light");
+        toggleTheme.innerText = "Light Theme";
+    }
+});
+
 toggleTheme.addEventListener("click", () => {
     if (body.getAttribute("data-theme") === "light") {
         body.setAttribute("data-theme", "dark");
