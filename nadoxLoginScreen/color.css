@@ -6,6 +6,7 @@
     --color-Container: #fff;
     --colorPlaceholder: #fff;
     --color-bgBox: #fff;
+
 }
 
 [data-theme="light"] {
@@ -15,3 +16,4 @@
     --colorPlaceholder: #000;
     --colorHover-btn: #6260dd;
 }
+

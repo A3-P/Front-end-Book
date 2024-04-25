@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--color-bg);  
+    background-color: var(--color-bg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,7 +19,7 @@ body {
     height: 60%;
     text-align: center;
     color: var(--color-Container);
-    display: none;
+    display: block;
 }
 
 .login-container h2 {
@@ -60,15 +60,51 @@ input[type="submit"]:hover {
     background-color: var(--colorHover-btn);
 }
 
-a{
+a {
     text-decoration: none;
-    color: rgb(93, 176, 214); 
+    color: rgb(93, 176, 214);
 }
-hr{
+hr {
     width: 100%;
     border: 1px solid #a3a3a381;
 }
 
+#singincontainer {
+    color: #fff;
+}
 
 
+/* animacao besta */
 
+@keyframes rotateIn {
+    0% {
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-90deg);
+    }
+}
+
+#signInContainer,
+#loginContainer {
+    color: #fff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hide {
+    animation: rotateOut 0.5s ease-in-out forwards;
+}
+
+.show {
+    animation: rotateIn 0.5s ease-in-out forwards;
+}
+/* animacao besta */
