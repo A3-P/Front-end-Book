@@ -90,12 +90,19 @@ input[type="button"] {
     border-radius: 4px;
     box-sizing: border-box;
     background-color: var(--color-btn);
-    color: var(--color-fg);
-    caret-color: var(--color-btn);
+    color: #fff;
+    caret-color: var(--color-fg);
+    
 }
 
 input[type="button"]:hover {
     background-color: var(--color-btn-hover);
+}
+
+input[type="file"] {
+    width: 93%;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 hr {
@@ -128,8 +135,7 @@ hr {
     }
 }
 
-#signInContainer,
-#loginContainer {
+#signInContainer, #loginContainer {
     color: #fff;
     transition: transform 0.5s ease-in-out;
 }
