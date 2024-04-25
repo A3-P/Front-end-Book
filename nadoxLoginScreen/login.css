@@ -16,10 +16,11 @@ body {
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 22%;
-    height: 60%;
+    height: 40%;
+    justify-content: center;
     text-align: center;
     color: var(--color-fg);
-    display: block;
+    display: absolute;
 }
 
 .login-container h2 {
@@ -64,6 +65,39 @@ input[type="submit"]:hover {
     text-decoration: none;
     color: var(--color-fg-alt);
 }
+
+
+#singincontainer {
+    background-color: var(--color-card); 
+    padding: 40px;
+    width: 22%;
+    height: 40%;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    text-align: center;
+    color: var(--color-fg);
+
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--color-btn);
+    color: var(--color-fg);
+    caret-color: var(--color-btn);
+}
+
+input[type="button"]:hover {
+    background-color: var(--color-btn-hover);
+}
+
 hr {
     width: 100%;
     border: 1px solid var(--color-border);

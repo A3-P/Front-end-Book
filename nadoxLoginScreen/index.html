@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="color.css">
     <title>Login - Book Guardian</title>
 </head>
-<body data-theme="dark">
+<body data-theme="light">
     <div class ="singin-container show" id="singincontainer" style="display: none;">
-        <h1>nessa div vc coloca todo o formulario de registro, tipo nome, email,
-        foto, senha e tals</h1>
-        <button id="goToLoginPage">botao para voltar pra tela de login</button>
+        <h2>Cadastro</h>
+        <form action="/cadastro" method="post">
+            <input type="email" id="newEmail" name="newUser" placeholder="Email" required>
+            <input type="password" id="newPassword" name="newPsUser" placeholder="Digite sua senha" required>
+            <input type="password" id="confirmPassword" name="confirmPsUser" placeholder="Confirme sua senha" required>
+            <input type="button" value="Cadastrar" placeholder="Cadastrar">
+        </form>
     </div>
     <div class ="login-container show" id="logincontainer" >
         <h2>Login</h2>
