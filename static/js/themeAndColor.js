@@ -1,46 +1,59 @@
 const body = document.body;
-const toggleTheme = document.getElementById("toggleTheme");
-const toggleColor = document.getElementById("toggleColor");
+const darkThemeRadio = document.getElementById("darkRadio");
+const lightThemeRadio = document.getElementById("lightRadio");
+const autoThemeRadio = document.getElementById("autoRadio");
+const pinkColorButton = document.getElementById("pink");
+const blueColorButton = document.getElementById("blue");
 
 function updateThemeBasedOnSystemPreference() {
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     if (prefersDarkMode) {
         body.setAttribute("data-theme", "dark");
-        toggleTheme.innerText = "Dark Theme";
     } else {
         body.setAttribute("data-theme", "light");
-        toggleTheme.innerText = "Light Theme";
     }
+}
+
+function setTheme(theme) {
+    body.setAttribute("data-theme", theme);
+}
+
+function setColor(color) {
+    body.setAttribute("data-color", color);
 }
 
 updateThemeBasedOnSystemPreference();
 
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
     if (e.matches) {
-        body.setAttribute("data-theme", "dark");
-        toggleTheme.innerText = "Dark Theme";
+        setTheme("dark");
     } else {
-        body.setAttribute("data-theme", "light");
-        toggleTheme.innerText = "Light Theme";
+        setTheme("light");
     }
 });
 
-toggleTheme.addEventListener("click", () => {
-    if (body.getAttribute("data-theme") === "light") {
-        body.setAttribute("data-theme", "dark");
-        toggleTheme.innerText = "Dark Theme";
-    } else {
-        body.setAttribute("data-theme", "light");
-        toggleTheme.innerText = "Light Theme";
+darkThemeRadio.addEventListener("change", () => {
+    if (darkThemeRadio.checked) {
+        setTheme("dark");
     }
 });
 
-toggleColor.addEventListener("click", () => {
-    if (body.getAttribute("data-color") === "pink") {
-        body.setAttribute("data-color", "blue");
-        toggleColor.innerText = "Blue Theme";
-    } else {
-        body.setAttribute("data-color", "pink");
-        toggleColor.innerText = "Pink Theme";
+lightThemeRadio.addEventListener("change", () => {
+    if (lightThemeRadio.checked) {
+        setTheme("light");
     }
+});
+
+autoThemeRadio.addEventListener("change", () => {
+    if (autoThemeRadio.checked) {
+        updateThemeBasedOnSystemPreference();
+    }
+});
+
+pinkColorButton.addEventListener("click", () => {
+    setColor("pink");
+});
+
+blueColorButton.addEventListener("click", () => {
+    setColor("blue");
 });
