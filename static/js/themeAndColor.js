@@ -5,6 +5,19 @@ const autoThemeRadio = document.getElementById("autoRadio");
 const pinkColorButton = document.getElementById("pink");
 const blueColorButton = document.getElementById("blue");
 
+
+document.querySelectorAll('.choiceTheme').forEach(choice => {
+    choice.addEventListener('click', () => {
+        const radioId = choice.getAttribute('id').replace('Theme', 'Radio');
+        const radio = document.getElementById(radioId);
+        if (radio) {
+            radio.checked = true;
+            radio.dispatchEvent(new Event('change'));
+        }
+    });
+});
+
+
 function updateThemeBasedOnSystemPreference() {
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     if (prefersDarkMode) {

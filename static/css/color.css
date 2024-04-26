@@ -15,6 +15,10 @@
     --color-fg: #fff;
     --color-fg-hover: #e7e7e7;
 
+    --color-btn: #4F4DE5;
+    --color-btn-hover: #6260dd;  
+    --color-fg-alt: rgb(93, 176, 214);  
+    --color-border: #666666;    
 }
 [data-theme="light"]{
     --color-bg: #f6f6f6;
@@ -22,6 +26,11 @@
     --color-subCard:#f0f0f0;
     --color-fg: #000;
     --color-fg-hover: #292929;
+
+    --color-btn: #4F4DE5;       
+    --color-btn-hover: #6260dd;  
+    --color-fg-alt: rgb(93, 176, 214);  
+    --color-border: #b8b8b8;     
 }
 
 .read{

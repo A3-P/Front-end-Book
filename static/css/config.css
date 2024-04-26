@@ -46,7 +46,7 @@
 
 }
 #autoTheme h5{
-    background: linear-gradient(to right, #fff 50%, #2d3242 50%);
+    background: linear-gradient(to right,  #2d3242 50%, #fff 50%);
 }
 #saveConfig{
     background-color: var(--color-main);

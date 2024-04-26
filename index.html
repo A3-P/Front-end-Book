@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="static/css/card.css" />
         <link rel="stylesheet" href="static/css/header.css" />
         <link rel="stylesheet" href="static/css/nav.css" />
-        <link rel="stylesheet" href="static/css/imports.css">
+        <link rel="stylesheet" href="static/css/imports.css" />
 
         <!-- title -->
         <link
@@ -19,7 +19,7 @@
         />
         <title>Main page</title>
     </head>
-    <body data-color="blue" data-theme="dark" >
+    <body data-color="blue" data-theme="dark">
         <header>
             <div id="mainHeader">
                 <h1>Book Guardian</h1>
@@ -47,10 +47,13 @@
                 <div>
                     <label for="genre">Gênero:</label>
                     <select id="genre">
-                        <option value="">Todos os Gêneros</option>
-                        <option value="ficcao">Ficção</option>
+                        <option value="">Generico</option>
+                        <option value="fiction">Ficcao cientifica</option>
                         <option value="romance">Romance</option>
-                        <option value="terror">Terror</option>
+                        <option value="horror">Terror</option>
+                        <option value="nonFiction">Nao ficcao</option>
+                        <option value="fantasy">Fantasia</option>
+                        <option value="mangaAndComic">Manga e HQ</option>
                     </select>
                 </div>
                 <div>
@@ -65,7 +68,11 @@
                 <i id="addBookbtn" class="fi fi-sr-add" title="Adicionar"></i>
                 <i id="homeBtn" class="fi fi-sr-home" title="Inicio"></i>
                 <i id="filterBtn" class="fi fi-sr-filter" title="Filtros"></i>
-                <i id="configBtn" class="fi fi-sr-settings" title="Configuracoes"></i>
+                <i
+                    id="configBtn"
+                    class="fi fi-sr-settings"
+                    title="Configuracoes"
+                ></i>
             </nav>
             <section>
                 <a href="#" class="card">
@@ -174,7 +181,10 @@
                         alt="capa"
                     />
                     <div class="backCard">
-                        <p id="title">Dois Mundos, Um Herói: Uma Aventura não Oficial de Minecraft</p>
+                        <p id="title">
+                            Dois Mundos, Um Herói: Uma Aventura não Oficial de
+                            Minecraft
+                        </p>
                         <p id="autora">Rezende Evel</p>
                     </div>
                 </a>

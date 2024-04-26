@@ -1,5 +1,5 @@
 const singIn = document.getElementById("singIn");
-const login= document.getElementById("goToLoginPage");
+const logIn= document.getElementById("logIn");
 const singincontainer = document.getElementById("singincontainer").style;
 const logincontainer = document.getElementById("logincontainer").style;
 
@@ -8,7 +8,7 @@ singIn.addEventListener("click", function() {
     logincontainer.display = "none";
 });   
 
-login.addEventListener("click", function() {
+logIn.addEventListener("click", function() {
     singincontainer.display = "none";
     logincontainer.display = "block";
 }); 
