@@ -107,6 +107,10 @@ input[type="file"] {
 
 label {
     font-size: medium;
+    text-align: left;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 6px;
 }   
 
 hr {
